@@ -10,7 +10,7 @@ char *left(const char *str, int n = 1);
 
 [[maybe_unused]] int code_0810_leftOver() {
     using namespace std;
-    char *trip = "Hawaii!!";
+    const char *trip = "Hawaii!!";
     unsigned long n = 12345678;
     int i;
     char *temp;
