@@ -6,7 +6,7 @@
 
 unsigned long left(unsigned long num, unsigned ct);
 
-char *left(const char *str, int n = 1);
+[[maybe_unused]] char *left(const char *str, int n = 1);
 
 [[maybe_unused]] int code_0810_leftOver() {
     using namespace std;
@@ -15,7 +15,9 @@ char *left(const char *str, int n = 1);
     int i;
     char *temp;
     for (i = 1; i < 10; ++i) {
-        cout << left(n, i) << endl;
+        cout <<
+        left(n, i)
+        << endl;
         temp = left(trip, i);
         cout << temp << endl;
         delete[]temp;
@@ -40,7 +42,7 @@ unsigned long left(unsigned long num, unsigned ct) {
         return num;
 }
 
-char *left(const char *str, int n) {
+[[maybe_unused]] char *left(const char *str, int n) {
     if (n < 0)
         n = 0;
     char *p = new char[n + 1];
